@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources | myclaw.rocks</title>
+    <meta
+      name="description"
+      content="Practical OpenClaw resources: checklists, templates, tooling recommendations, and FAQ."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div data-site-header></div>
+
+    <main class="site-shell">
+      <section class="hero reveal">
+        <p class="kicker">Resources / Operator Toolkit</p>
+        <h1>Templates and checklists you can use today</h1>
+        <p class="lede">
+          Use these resources to deploy faster, reduce operational drift, and make OpenClaw outputs easier to trust.
+        </p>
+      </section>
+
+      <section class="reveal">
+        <div class="section-head">
+          <h2 class="section-title">Starter resources</h2>
+          <p class="section-summary">Downloadable templates designed for real operator workflows.</p>
+        </div>
+        <article class="resource-card">
+          <a class="template-link" href="resources/templates/starter-checklist.md" download>
+            <strong>Starter checklist</strong>
+            <span>Initial setup sequence for week one</span>
+          </a>
+          <a class="template-link" href="resources/templates/deployment-checklist.md" download>
+            <strong>Deployment checklist</strong>
+            <span>Readiness checks before production workflows</span>
+          </a>
+          <a class="template-link" href="resources/templates/agent-design-template.md" download>
+            <strong>Agent design template</strong>
+            <span>Define role scope, inputs, outputs, and guardrails</span>
+          </a>
+          <a class="template-link" href="resources/templates/worker-reporting-template.md" download>
+            <strong>Worker reporting template</strong>
+            <span>Standardized updates for quality and traceability</span>
+          </a>
+          <a class="template-link" href="resources/templates/decision-queue-template.md" download>
+            <strong>Decision queue template</strong>
+            <span>Track unresolved decisions with clear ownership</span>
+          </a>
+        </article>
+      </section>
+
+      <section class="reveal">
+        <div class="section-head">
+          <h2 class="section-title">Recommended tooling</h2>
+          <p class="section-summary">Reference stack for small teams and SMBs operating OpenClaw in production.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Control layer</h3>
+            <ul class="bullet-list">
+              <li>OpenClaw runtime with explicit role definitions</li>
+              <li>Policy and permission config under version control</li>
+              <li>Trace and event storage for auditability</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Business context</h3>
+            <ul class="bullet-list">
+              <li>CRM for account and deal history</li>
+              <li>Task platform for execution queues and dependencies</li>
+              <li>Calendar system for follow-up and operational cadence</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Governance</h3>
+            <ul class="bullet-list">
+              <li>Decision queue with owner and due date</li>
+              <li>Weekly review dashboard with quality metrics</li>
+              <li>Incident log for automation failures and fixes</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="reveal">
+        <div class="section-head">
+          <h2 class="section-title">FAQ</h2>
+          <p class="section-summary">Common questions from teams moving from experimentation to operations.</p>
+        </div>
+
+        <details>
+          <summary>How much setup is required before OpenClaw is useful?</summary>
+          <p>
+            You can produce value in days, but only if you define role scopes and decision gates first. Skipping this
+            creates fast confusion.
+          </p>
+        </details>
+
+        <details>
+          <summary>When should we let agents execute actions automatically?</summary>
+          <p>
+            After repeated review cycles show stable quality in a bounded workflow. Start assistive, then increase
+            autonomy in controlled steps.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do we need technical staff to operate this?</summary>
+          <p>
+            Not always. Non-technical operators can run mature workflows if templates, runbooks, and escalation paths
+            are already defined.
+          </p>
+        </details>
+
+        <details>
+          <summary>What is the biggest operational risk?</summary>
+          <p>
+            Unclear accountability. If no one owns decisions, quality control, and workflow health, agent output becomes
+            inconsistent quickly.
+          </p>
+        </details>
+      </section>
+
+      <section class="reveal">
+        <div class="callout">
+          <h3>Need help implementing these resources in your business?</h3>
+          <p>Fintery can convert this toolkit into a working OpenClaw operating model tailored to your team.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="work-with-us.html">Work with Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-site-footer></div>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>
