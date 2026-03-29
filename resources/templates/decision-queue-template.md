@@ -1,11 +1,19 @@
 # Decision Queue Template
 
-| Decision ID | Topic | Owner | Deadline | Context | Options | Recommendation | Status |
+Single queue for unresolved decisions. One owner per decision.
+
+| Decision ID | Topic | Owner | Deadline | Impact | Options | Recommendation | Status |
 |---|---|---|---|---|---|---|---|
 | D-001 |  |  |  |  |  |  | Pending |
 
-## Decision Rules
-- Every decision has one owner.
-- Every decision has a due date.
-- Every recommendation includes rationale and risk.
-- Closed decisions are logged with timestamp and result.
+## Queue operating rules
+- Every item has one accountable owner.
+- Every item has a clear due date.
+- Recommendation includes rationale and risk.
+- Closed items include final decision and timestamp.
+
+## Status definitions
+- Pending: Awaiting owner decision.
+- In Review: Evidence gathering in progress.
+- Approved: Decision accepted and ready for execution.
+- Rejected: Decision declined with rationale recorded.

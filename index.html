@@ -31,155 +31,135 @@
         <div class="section-head">
           <h2 class="section-title">Built for operators, not tourists</h2>
           <p class="section-summary">
-            myclaw.rocks is a field manual for teams that want useful agents without chaos. You get practical patterns,
-            not vague demos. You get operating clarity, not AI theater.
+            myclaw.rocks is for founders and teams who need OpenClaw to operate in production, with clear ownership,
+            predictable output, and practical safeguards.
           </p>
         </div>
         <div class="pillar">
-          OpenClaw becomes valuable when it is deployed with role boundaries, decision gates, memory discipline, and
-          review loops. This site focuses on exactly that.
+          The principle is simple: one execution layer, one decision queue, explicit human ownership. That is how agent
+          systems remain useful under pressure.
         </div>
+      </section>
+
+      <section class="reveal">
+        <div class="section-head">
+          <h2 class="section-title">Reference stack snapshot</h2>
+          <p class="section-summary">
+            A concrete founder setup for v1: founder-led decisions, Berny as planning layer, specialist workers for
+            execution, and business context connected through core systems.
+          </p>
+        </div>
+        <article class="flow-board">
+          <div class="flow-grid">
+            <article class="flow-node">
+              <strong>Founder</strong>
+              <p>Owns priorities, approves decisions, and resolves trade-offs.</p>
+            </article>
+            <article class="flow-node">
+              <strong>Berny (Chief of Staff)</strong>
+              <p>Decomposes goals, routes tasks, and keeps execution focused.</p>
+            </article>
+            <article class="flow-node">
+              <strong>Worker Agents</strong>
+              <p>Execute bounded tasks across research, operations, and drafting.</p>
+            </article>
+            <article class="flow-node">
+              <strong>EarnRM</strong>
+              <p>Provides CRM and account context so outputs align with real pipeline reality.</p>
+            </article>
+            <article class="flow-node">
+              <strong>Browser Worker</strong>
+              <p>Handles process-heavy web tasks through explicit runbooks and guardrails.</p>
+            </article>
+            <article class="flow-node">
+              <strong>Claude / Codex</strong>
+              <p>Reasoning and production execution layer for high-quality deliverables.</p>
+            </article>
+          </div>
+          <p class="flow-caption">
+            Flow: Founder decides -> Berny plans -> Workers execute -> Reviewer checks -> Founder approves.
+          </p>
+        </article>
       </section>
 
       <section class="reveal">
         <div class="section-head">
           <h2 class="section-title">What you will find</h2>
           <p class="section-summary">
-            Everything is organized for real implementation: setup, operations, agents, and integrations.
+            Content organized by operational need: setup, operations, architecture, integrations, and risk control.
           </p>
         </div>
         <div class="grid-4">
           <article class="data-card">
             <span class="badge">Setup</span>
             <h3>Deploy without guesswork</h3>
-            <p>Environment baselines, role definitions, and first-week rollout plans that avoid early mistakes.</p>
+            <p>Environment baselines, role definitions, and first-week rollout plans.</p>
           </article>
           <article class="data-card">
             <span class="badge">Operations</span>
             <h3>Run with discipline</h3>
-            <p>Cadence, reporting, decision queues, and escalation rules to keep work predictable.</p>
+            <p>Cadence, reporting, decision queues, and escalation rules that keep quality stable.</p>
           </article>
           <article class="data-card">
-            <span class="badge">Agents</span>
-            <h3>Design useful roles</h3>
-            <p>Clear scopes, guardrails, and handoff patterns for multi-agent systems that actually deliver value.</p>
+            <span class="badge">Architectures</span>
+            <h3>Select the right stack</h3>
+            <p>Reference operating models by team stage, risk profile, and workflow complexity.</p>
           </article>
           <article class="data-card">
             <span class="badge">Integrations</span>
             <h3>Connect business context</h3>
-            <p>CRM, task systems, calendars, and browser workflows integrated with safety and traceability in mind.</p>
+            <p>CRM, tasks, calendars, and browser workflows integrated with traceability.</p>
           </article>
         </div>
       </section>
 
       <section class="reveal">
         <div class="section-head">
-          <h2 class="section-title">Reference architectures</h2>
+          <h2 class="section-title">Reference architectures preview</h2>
           <p class="section-summary">
-            Example operating models for different maturity levels, from solo teams to multi-role support stacks.
+            Start with the lightest model that can still enforce role clarity, review discipline, and decision control.
           </p>
         </div>
         <div class="grid-3">
           <article class="stack-card">
             <h3>Solo Operator Setup</h3>
-            <p>One human, one planning lane, bounded workers, and daily review loops.</p>
-            <ul class="tight-list">
-              <li>Single source of truth for decisions</li>
-              <li>Task router + memory hygiene</li>
-              <li>Tight weekly checkpoint rhythm</li>
-            </ul>
+            <p>One operator, one decision queue, bounded workers, daily review.</p>
           </article>
           <article class="stack-card">
             <h3>Founder + AI Chief of Staff</h3>
-            <p>Founder-owned decisions, delegated execution, strong reporting contracts.</p>
-            <ul class="tight-list">
-              <li>Decision queue for high-impact tasks</li>
-              <li>Agent role ownership by domain</li>
-              <li>Escalation gate for irreversible actions</li>
-            </ul>
+            <p>Founder-owned decisions with delegated execution and strong reporting loops.</p>
           </article>
           <article class="stack-card">
             <h3>SMB Agent Support Stack</h3>
-            <p>Customer ops, internal ops, and growth workflows coordinated with policy guardrails.</p>
-            <ul class="tight-list">
-              <li>CRM + task + calendar integration</li>
-              <li>Audit-friendly activity records</li>
-              <li>Monthly system tuning</li>
-            </ul>
+            <p>Cross-functional operations with service-level expectations and oversight.</p>
           </article>
+        </div>
+        <div class="cta-strip">
+          <a class="btn btn-primary" href="architectures.html">See real-world setups</a>
         </div>
       </section>
 
       <section class="reveal">
         <div class="section-head">
-          <h2 class="section-title">Common mistakes</h2>
+          <h2 class="section-title">Common mistakes preview</h2>
           <p class="section-summary">
-            Most OpenClaw failures are operational, not technical. These patterns show where teams lose control and how
-            to recover quickly.
+            Most failures are avoidable: unclear role ownership, weak reporting, and no decision gate discipline.
           </p>
         </div>
         <div class="mistake-grid">
           <article class="mistake">
-            <h4>Unclear role boundaries</h4>
-            <strong>Failure mode:</strong>
-            <p>Agents overlap responsibilities and produce conflicting outputs.</p>
+            <h4>Too much autonomy too soon</h4>
             <strong>Fix:</strong>
-            <p>Publish role charters with explicit authority limits and handoff rules.</p>
+            <p>Scale autonomy in stages, with quality evidence before each step.</p>
           </article>
           <article class="mistake">
-            <h4>No decision gates</h4>
-            <strong>Failure mode:</strong>
-            <p>Automation runs actions that should require operator review.</p>
+            <h4>No single decision queue</h4>
             <strong>Fix:</strong>
-            <p>Define mandatory review points for money, legal, customer, or production-impact tasks.</p>
-          </article>
-          <article class="mistake">
-            <h4>Memory sprawl</h4>
-            <strong>Failure mode:</strong>
-            <p>Important context gets duplicated, stale, or inaccessible.</p>
-            <strong>Fix:</strong>
-            <p>Keep one memory strategy: what is ephemeral, what is durable, and who can write each layer.</p>
-          </article>
-          <article class="mistake">
-            <h4>Weak reporting</h4>
-            <strong>Failure mode:</strong>
-            <p>Operators cannot tell what happened, why, and what to do next.</p>
-            <strong>Fix:</strong>
-            <p>Use a standard worker reporting template with evidence, risks, and next actions every cycle.</p>
+            <p>Route unresolved decisions to one owner-controlled queue with deadlines.</p>
           </article>
         </div>
-      </section>
-
-      <section class="reveal">
-        <div class="section-head">
-          <h2 class="section-title">Best-practice principles</h2>
-          <p class="section-summary">Short rules that keep OpenClaw useful under real business pressure.</p>
-        </div>
-        <div class="principles">
-          <article class="principle">
-            <h4>Operator First</h4>
-            <p>Humans own outcomes. Agents accelerate execution.</p>
-          </article>
-          <article class="principle">
-            <h4>Small Blast Radius</h4>
-            <p>Start with constrained workflows before expanding autonomy.</p>
-          </article>
-          <article class="principle">
-            <h4>Traceability</h4>
-            <p>Every meaningful action must be observable and reviewable.</p>
-          </article>
-          <article class="principle">
-            <h4>Decision Hygiene</h4>
-            <p>Separate fast reversible choices from slow irreversible ones.</p>
-          </article>
-          <article class="principle">
-            <h4>Role Clarity</h4>
-            <p>Each agent has one primary purpose and measurable outputs.</p>
-          </article>
-          <article class="principle">
-            <h4>Continuous Tuning</h4>
-            <p>Review weekly, tune monthly, redesign quarterly.</p>
-          </article>
+        <div class="cta-strip">
+          <a class="btn btn-secondary" href="mistakes.html">Avoid common mistakes</a>
         </div>
       </section>
 
@@ -187,38 +167,36 @@
         <div class="section-head">
           <h2 class="section-title">OpenClaw for businesses</h2>
           <p class="section-summary">
-            OpenClaw becomes significantly more valuable when connected to real workflows and governed by controlled
-            agent roles.
+            OpenClaw becomes materially more valuable when connected to revenue workflows and controlled agent roles.
           </p>
         </div>
         <div class="grid-2">
           <article class="card">
-            <h3>Integration stack</h3>
-            <ul class="bullet-list">
-              <li>CRM context for pipeline, account history, and handoff continuity</li>
-              <li>Task system integration for prioritized execution and dependencies</li>
-              <li>Calendar-aware workflows for meetings, follow-ups, and review timing</li>
-              <li>Browser workers for process-heavy web tasks with explicit constraints</li>
+            <h3>What changes in practice</h3>
+            <ul class="op-list">
+              <li>Operators spend less time coordinating routine execution.</li>
+              <li>Teams get clearer reporting on what happened and what is next.</li>
+              <li>Decision-makers retain control over irreversible actions.</li>
             </ul>
           </article>
           <article class="card">
-            <h3>Controlled role model</h3>
-            <ul class="bullet-list">
-              <li>Planner role for decomposition and sequencing</li>
-              <li>Worker roles for bounded execution</li>
-              <li>Reviewer role for QA and risk screening</li>
-              <li>Operator role for final decisions and intervention</li>
+            <h3>Where value appears first</h3>
+            <ul class="op-list">
+              <li>Founder support and planning cadence</li>
+              <li>Pipeline follow-up and account operations</li>
+              <li>Internal workflow triage and documentation throughput</li>
             </ul>
           </article>
         </div>
         <div class="callout">
-          <h3>Need implementation support?</h3>
+          <h3>Ready to implement this properly?</h3>
           <p>
-            Fintery helps founders and SMBs deploy practical OpenClaw systems: advisory, setup, role design,
-            integration, and operational tuning.
+            Fintery helps founders and SMBs move from concept to a working OpenClaw operating layer with architecture,
+            integration, and execution discipline.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="work-with-us.html">Talk to Fintery</a>
+            <a class="btn btn-secondary" href="resources.html">Open practical resources</a>
           </div>
         </div>
       </section>

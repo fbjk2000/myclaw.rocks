@@ -1,35 +1,40 @@
 # Agent Design Template
 
-## Agent Name
+## Agent identity
+- Name:
+- Owner:
+- Version:
 
-## Primary Objective
+## Role purpose
+- Primary objective:
+- Why this role exists:
 
-## Scope
-- In-scope:
-- Out-of-scope:
+## Scope boundaries
+- In scope:
+- Out of scope:
+- Escalate when:
 
 ## Inputs
-- Required inputs:
-- Optional inputs:
+- Required context:
+- Optional context:
+- Source systems:
 
 ## Outputs
-- Output format:
+- Deliverable format:
 - Evidence requirements:
+- Definition of done:
 
 ## Guardrails
 - Forbidden actions:
-- Required checks before execution:
+- Decision gates involved:
+- Maximum autonomy level:
 
-## Escalation Rules
-- Escalate when:
-- Escalate to:
+## Quality expectations
+- Accuracy threshold:
+- Style/format constraints:
+- Maximum acceptable revision rate:
 
-## Quality Criteria
-- Accuracy:
-- Completeness:
-- Timeliness:
-
-## Metrics
-- Throughput:
-- Error rate:
-- Revision rate:
+## Reporting
+- Report cadence:
+- Required report fields:
+- Owner for report review:

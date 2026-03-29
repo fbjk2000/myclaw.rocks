@@ -1,26 +1,28 @@
 # OpenClaw Deployment Checklist
 
-## Environment
-- [ ] Separate staging and production
-- [ ] Confirm permissions for all tools/connectors
-- [ ] Configure secure secret handling
+Use this before promoting a workflow from staging to production.
 
-## Architecture
-- [ ] Document selected architecture model
-- [ ] Document role charters and ownership
-- [ ] Document fallback/rollback process
+## 1. Environment
+- [ ] Staging and production are separated.
+- [ ] Secrets are managed securely.
+- [ ] Connector permissions are validated.
 
-## Governance
-- [ ] Decision gates configured
-- [ ] Approval policy documented
-- [ ] Incident logging enabled
+## 2. Workflow readiness
+- [ ] Role scope is documented and approved.
+- [ ] Runbook includes normal path and fallback path.
+- [ ] Decision gates are active in execution flow.
 
-## Validation
-- [ ] Run staging dry-run with representative tasks
-- [ ] Validate output quality against acceptance criteria
-- [ ] Validate reviewer escalation behavior
+## 3. Quality readiness
+- [ ] Acceptance criteria documented.
+- [ ] Reviewer checklist completed.
+- [ ] Baseline test cases passed.
 
-## Go-live
-- [ ] Assign on-call operator
-- [ ] Confirm daily review schedule
-- [ ] Publish post-launch checkpoint dates
+## 4. Risk readiness
+- [ ] Escalation contact list exists.
+- [ ] Rollback plan documented.
+- [ ] Incident template prepared.
+
+## 5. Launch controls
+- [ ] Operator on-call confirmed.
+- [ ] Daily triage slot booked.
+- [ ] First-week review date scheduled.

@@ -1,28 +1,36 @@
 # Worker Reporting Template
 
-## Task ID
+## Metadata
+- Task ID:
+- Workflow:
+- Worker role:
+- Timestamp:
 
-## Objective
+## Objective recap
+- Requested outcome:
 
-## Work Completed
-- 
+## Work completed
+- Step 1:
+- Step 2:
+- Step 3:
 
-## Output Summary
-- 
+## Output summary
+- What was delivered:
 
-## Evidence / References
-- 
+## Evidence
+- Data sources used:
+- Links/files reviewed:
 
-## Risks Noted
-- 
+## Risks and caveats
+- Known uncertainty:
+- Potential downside:
 
-## Blockers
-- 
+## Escalations needed
+- Decision required:
+- Owner:
+- Deadline:
 
-## Decisions Needed
-- 
-
-## Recommended Next Actions
-1. 
-2. 
-3. 
+## Recommended next actions
+1.
+2.
+3.

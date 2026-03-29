@@ -432,6 +432,90 @@ h1 em {
   max-width: 70ch;
 }
 
+.cta-strip {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.flow-board {
+  margin-top: var(--space-6);
+  border: 1px solid rgba(44, 44, 44, 0.12);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.36));
+  box-shadow: var(--shadow);
+}
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.flow-node {
+  border: 1px solid rgba(44, 44, 44, 0.1);
+  border-radius: 14px;
+  padding: var(--space-4);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.flow-node strong {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.flow-node p {
+  margin: 0;
+  color: #504d48;
+  font-size: 0.95rem;
+}
+
+.flow-caption {
+  margin: var(--space-4) 0 0;
+  color: #5b5752;
+}
+
+.op-list {
+  margin: var(--space-3) 0 0;
+  padding-left: 18px;
+}
+
+.op-list li + li {
+  margin-top: var(--space-2);
+}
+
+.architecture-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.architecture-detail p {
+  margin: 0;
+}
+
+.label {
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--smoke);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.footer-inner a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .template-link {
   display: flex;
   align-items: baseline;
@@ -549,6 +633,10 @@ summary {
 
   .grid-3,
   .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-grid {
     grid-template-columns: 1fr;
   }
 

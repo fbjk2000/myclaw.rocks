@@ -6,7 +6,7 @@
     <title>Architectures | myclaw.rocks</title>
     <meta
       name="description"
-      content="Reference operating architectures for OpenClaw from solo operators to SMB support stacks."
+      content="Reference OpenClaw architectures with practical guidance on stack design, ownership, and failure modes."
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
@@ -16,146 +16,146 @@
     <main class="site-shell">
       <section class="hero reveal">
         <p class="kicker">Reference Architectures</p>
-        <h1>Operating models that hold up in real work</h1>
+        <h1>Choose an operating model that matches your reality</h1>
         <p class="lede">
-          Choose architecture by business stage, risk profile, and team capacity. Good architecture reduces coordination
-          waste and increases trust in agent output.
+          These setups are meant for real-world operations: clear ownership, review discipline, and practical scaling.
         </p>
-      </section>
-
-      <section class="reveal">
-        <div class="section-head">
-          <h2 class="section-title">Architecture set for v1</h2>
-          <p class="section-summary">Use these as starting points, then tune for your operating constraints.</p>
-        </div>
-        <div class="grid-2">
-          <article class="stack-card">
-            <span class="badge">A1</span>
-            <h3>Solo Operator Setup</h3>
-            <p>Best for individual operators and builders validating real utility quickly.</p>
-            <ul class="bullet-list">
-              <li>Planner + Worker + Reviewer in a single loop</li>
-              <li>Daily queue review and strict task boundaries</li>
-              <li>Manual approval for all external actions</li>
-            </ul>
-          </article>
-          <article class="stack-card">
-            <span class="badge">A2</span>
-            <h3>Founder + AI Chief of Staff</h3>
-            <p>Best for founders handling strategy while delegating structured execution.</p>
-            <ul class="bullet-list">
-              <li>Founder-owned decision lane</li>
-              <li>Chief-of-staff agent for planning and coordination</li>
-              <li>Specialist workers by function (ops, growth, research)</li>
-            </ul>
-          </article>
-          <article class="stack-card">
-            <span class="badge">A3</span>
-            <h3>SMB Agent Support Stack</h3>
-            <p>Best for SMBs needing operational consistency across customer and internal workflows.</p>
-            <ul class="bullet-list">
-              <li>Department-tagged work queues</li>
-              <li>Service-level definitions for response and completion</li>
-              <li>Reviewer role aligned with operations leadership</li>
-            </ul>
-          </article>
-          <article class="stack-card">
-            <span class="badge">A4</span>
-            <h3>CRM + Task + Calendar Stack</h3>
-            <p>Best when customer context and execution timing drive business value.</p>
-            <ul class="bullet-list">
-              <li>CRM as context source</li>
-              <li>Task platform as execution ledger</li>
-              <li>Calendar as planning and follow-up anchor</li>
-            </ul>
-          </article>
-          <article class="stack-card">
-            <span class="badge">A5</span>
-            <h3>Browser Worker Stack</h3>
-            <p>Best for process-heavy web operations that require reproducible execution traces.</p>
-            <ul class="bullet-list">
-              <li>Explicit browser worker guardrails</li>
-              <li>Step-based runbooks and snapshot evidence</li>
-              <li>Escalation on unknown UI states or policy conflict</li>
-            </ul>
-          </article>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="best-practices.html">Explore best practices</a>
+          <a class="btn btn-secondary" href="work-with-us.html">Talk to Fintery</a>
         </div>
       </section>
 
       <section class="reveal">
         <div class="section-head">
-          <h2 class="section-title">Architecture selection matrix</h2>
-          <p class="section-summary">Pick the lightest model that can still enforce quality and control.</p>
+          <h2 class="section-title">A1 - Solo Operator Setup</h2>
+          <p class="section-summary">Fastest way for a single founder or operator to run OpenClaw without losing control.</p>
+        </div>
+        <article class="stack-card">
+          <div class="architecture-detail">
+            <p><span class="label">Who it is for</span>Solo founders, independent operators, first production pilot teams.</p>
+            <p><span class="label">What the stack includes</span>Operator + planner + one worker lane + one reviewer pass + single decision queue.</p>
+            <p><span class="label">Why it works</span>Minimal coordination overhead and clear accountability on every output.</p>
+            <p><span class="label">What the human still owns</span>All approvals, final decisions, and workflow redesign.</p>
+            <p><span class="label">Common failure modes</span>Role blending, skipped reviews, and too many concurrent experiments.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="reveal">
+        <div class="section-head">
+          <h2 class="section-title">A2 - Founder + AI Chief of Staff</h2>
+          <p class="section-summary">The default architecture for founders who need leverage without delegating judgment.</p>
+        </div>
+        <article class="stack-card">
+          <div class="architecture-detail">
+            <p><span class="label">Who it is for</span>Founder-led teams managing growth, operations, and strategic decisions simultaneously.</p>
+            <p><span class="label">What the stack includes</span>Founder decision lane, Berny-style planning role, specialist workers, reviewer gate.</p>
+            <p><span class="label">Why it works</span>Founder stays focused on priorities while execution becomes structured and repeatable.</p>
+            <p><span class="label">What the human still owns</span>Priority setting, high-impact trade-offs, and exceptions to normal process.</p>
+            <p><span class="label">Common failure modes</span>Chief-of-staff role becomes overloaded and decision queue discipline erodes.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="reveal">
+        <div class="section-head">
+          <h2 class="section-title">A3 - SMB Agent Support Stack</h2>
+          <p class="section-summary">For small and medium businesses that need consistent multi-lane support.</p>
+        </div>
+        <article class="stack-card">
+          <div class="architecture-detail">
+            <p><span class="label">Who it is for</span>SMBs with customer operations, internal operations, and growth workflows to coordinate.</p>
+            <p><span class="label">What the stack includes</span>Lane-based worker teams, central planner, reviewer pool, department-level owners.</p>
+            <p><span class="label">Why it works</span>Service expectations become explicit and throughput improves without sacrificing quality.</p>
+            <p><span class="label">What the human still owns</span>Lane ownership, SLA definition, incident resolution, and staffing decisions.</p>
+            <p><span class="label">Common failure modes</span>No lane owner, unclear escalation paths, and inconsistent reporting formats.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="reveal">
+        <div class="section-head">
+          <h2 class="section-title">A4 - CRM + Task + Calendar Stack</h2>
+          <p class="section-summary">The practical integration architecture for customer-facing execution teams.</p>
+        </div>
+        <article class="stack-card">
+          <div class="architecture-detail">
+            <p><span class="label">Who it is for</span>Teams where pipeline follow-up and operational timing drive commercial outcomes.</p>
+            <p><span class="label">What the stack includes</span>CRM context ingestion, task queue orchestration, calendar-aware scheduling.</p>
+            <p><span class="label">Why it works</span>Context and execution stay connected, reducing dropped handoffs and stale tasks.</p>
+            <p><span class="label">What the human still owns</span>Account strategy, exception handling, and customer-sensitive communication sign-off.</p>
+            <p><span class="label">Common failure modes</span>Outdated CRM data, duplicate tasks, and no owner for overdue decision items.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="reveal">
+        <div class="section-head">
+          <h2 class="section-title">A5 - Browser Worker Stack</h2>
+          <p class="section-summary">For high-volume browser workflows that require repeatability and evidence.</p>
+        </div>
+        <article class="stack-card">
+          <div class="architecture-detail">
+            <p><span class="label">Who it is for</span>Teams running repetitive web tasks across fragmented tools and portals.</p>
+            <p><span class="label">What the stack includes</span>Browser worker runbooks, step-level evidence capture, escalation triggers.</p>
+            <p><span class="label">Why it works</span>Converts fragile manual routines into governed process lanes.</p>
+            <p><span class="label">What the human still owns</span>Runbook design, exception handling, and policy-sensitive actions.</p>
+            <p><span class="label">Common failure modes</span>Unmanaged UI changes, missing fallback path, and weak incident reporting.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="reveal">
+        <div class="section-head">
+          <h2 class="section-title">Selection matrix</h2>
+          <p class="section-summary">Choose by control needs first, then by scale.</p>
         </div>
         <table class="matrix">
           <thead>
             <tr>
               <th>Architecture</th>
-              <th>Team size</th>
-              <th>Best for</th>
-              <th>Risk level</th>
+              <th>Best stage</th>
+              <th>Control demand</th>
+              <th>Primary outcome</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Solo Operator Setup</td>
-              <td>1</td>
-              <td>Rapid experimentation with constrained automation</td>
-              <td>Low to moderate</td>
+              <td>Initial production use</td>
+              <td>Moderate</td>
+              <td>Fast validation with clean ownership</td>
             </tr>
             <tr>
               <td>Founder + AI Chief of Staff</td>
-              <td>1-5</td>
-              <td>Founder-led delegation with strong decision gates</td>
-              <td>Moderate</td>
+              <td>Founder-led growth</td>
+              <td>Moderate to high</td>
+              <td>Delegated execution with strategic control</td>
             </tr>
             <tr>
               <td>SMB Agent Support Stack</td>
-              <td>5-50</td>
-              <td>Cross-functional operations and service consistency</td>
-              <td>Moderate to high</td>
+              <td>Multi-lane operations</td>
+              <td>High</td>
+              <td>Consistent service and throughput</td>
             </tr>
             <tr>
               <td>CRM + Task + Calendar Stack</td>
-              <td>Any</td>
-              <td>Pipeline, follow-up, and execution reliability</td>
-              <td>Moderate</td>
+              <td>Revenue operations maturity</td>
+              <td>Moderate to high</td>
+              <td>Pipeline reliability and follow-through</td>
             </tr>
             <tr>
               <td>Browser Worker Stack</td>
-              <td>Any</td>
-              <td>High-volume browser workflows with traceability needs</td>
-              <td>High without controls</td>
+              <td>Process-heavy operations</td>
+              <td>High</td>
+              <td>Repeatable web execution with auditability</td>
             </tr>
           </tbody>
         </table>
-      </section>
-
-      <section class="reveal">
-        <div class="section-head">
-          <h2 class="section-title">Implementation sequence</h2>
-          <p class="section-summary">A practical rollout path that avoids over-automation too early.</p>
-        </div>
-        <div class="grid-3">
-          <article class="card">
-            <h3>Phase 1</h3>
-            <p>Establish roles, templates, and review cycles with one contained workflow.</p>
-          </article>
-          <article class="card">
-            <h3>Phase 2</h3>
-            <p>Add integrations and standard reporting. Keep a human gate on external actions.</p>
-          </article>
-          <article class="card">
-            <h3>Phase 3</h3>
-            <p>Scale to multiple lanes with metric-driven tuning and monthly architecture reviews.</p>
-          </article>
-        </div>
-        <div class="callout">
-          <h3>Need architecture support?</h3>
-          <p>Fintery can help design and implement the right OpenClaw operating model for your stage.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="work-with-us.html">Talk to Fintery</a>
-          </div>
+        <div class="cta-strip">
+          <a class="btn btn-primary" href="best-practices.html">Explore best practices</a>
+          <a class="btn btn-secondary" href="work-with-us.html">Talk to Fintery</a>
         </div>
       </section>
     </main>

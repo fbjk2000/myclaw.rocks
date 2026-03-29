@@ -6,7 +6,7 @@
     <title>Best Practices | myclaw.rocks</title>
     <meta
       name="description"
-      content="Operator-grade best practices for deploying and running OpenClaw safely and effectively."
+      content="Field manual best practices for running OpenClaw safely, clearly, and at operator-grade quality."
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
@@ -15,36 +15,39 @@
 
     <main class="site-shell">
       <section class="hero reveal">
-        <p class="kicker">Best Practices / Operator Discipline</p>
-        <h1>Use OpenClaw with control, not chaos</h1>
+        <p class="kicker">Best Practices / Field Manual</p>
+        <h1>Operate OpenClaw with disciplined leverage</h1>
         <p class="lede">
-          The objective is reliability and leverage, not novelty. This playbook is built for teams that need dependable
-          outcomes in live operations.
+          This guide is for real operating environments where quality, speed, and risk must stay in balance.
         </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="architectures.html">See real-world setups</a>
+          <a class="btn btn-secondary" href="work-with-us.html">Talk to Fintery</a>
+        </div>
       </section>
 
       <section class="reveal">
         <div class="section-head">
           <h2 class="section-title">Setup fundamentals</h2>
-          <p class="section-summary">Before scaling, lock in foundations that prevent avoidable rework.</p>
+          <p class="section-summary">Stability starts before the first automated task.</p>
         </div>
         <div class="grid-2">
           <article class="card">
-            <h3>Environment baseline</h3>
-            <ul class="bullet-list">
-              <li>Define allowed tools, connectors, and access boundaries</li>
-              <li>Separate development, staging, and production contexts</li>
-              <li>Implement audit logging from day one</li>
-              <li>Establish owner accountability for every workflow lane</li>
+            <h3>Preflight requirements</h3>
+            <ul class="op-list">
+              <li>Define one business objective and one success metric set.</li>
+              <li>Declare allowed tools/connectors and restricted actions.</li>
+              <li>Assign named owners for operator, planner, reviewer roles.</li>
+              <li>Publish escalation policy for legal, financial, and customer-impact tasks.</li>
             </ul>
           </article>
           <article class="card">
-            <h3>Role baseline</h3>
-            <ul class="bullet-list">
-              <li>One planner role, multiple bounded worker roles</li>
-              <li>Mandatory reviewer role for quality and compliance checks</li>
-              <li>Operator approvals for external-facing or irreversible actions</li>
-              <li>Escalation channels with response-time expectations</li>
+            <h3>First-week operating baseline</h3>
+            <ul class="op-list">
+              <li>One bounded workflow only (do not run five pilots at once).</li>
+              <li>One output template and one review template for all workers.</li>
+              <li>Daily triage ritual at a fixed time.</li>
+              <li>End-of-week quality review with specific examples and corrections.</li>
             </ul>
           </article>
         </div>
@@ -53,69 +56,78 @@
       <section class="reveal">
         <div class="section-head">
           <h2 class="section-title">Operational discipline</h2>
-          <p class="section-summary">OpenClaw quality tracks operating rigor more than raw model capability.</p>
+          <p class="section-summary">Repeatable cadence beats ad hoc heroics.</p>
         </div>
-        <div class="principles">
-          <article class="principle">
-            <h4>Daily triage</h4>
-            <p>Review carry-over items, blocked tasks, and pending decisions each day.</p>
-          </article>
-          <article class="principle">
-            <h4>Weekly review</h4>
-            <p>Assess output quality, error rates, and process friction with real examples.</p>
-          </article>
-          <article class="principle">
-            <h4>Runbook hygiene</h4>
-            <p>Update runbooks as workflows change. Stale playbooks create hidden risk.</p>
-          </article>
-          <article class="principle">
-            <h4>Role health checks</h4>
-            <p>Retire or refactor underperforming agent roles quickly.</p>
-          </article>
-          <article class="principle">
-            <h4>Quality contracts</h4>
-            <p>Standardize output format, evidence requirements, and confidence levels.</p>
-          </article>
-          <article class="principle">
-            <h4>Escalate early</h4>
-            <p>If ambiguity is high, escalate before execution rather than after damage.</p>
-          </article>
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th>Cadence</th>
+              <th>What happens</th>
+              <th>Output</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Daily</td>
+              <td>Triage queue, unblock critical tasks, resolve urgent decisions</td>
+              <td>Prioritized execution list</td>
+            </tr>
+            <tr>
+              <td>Weekly</td>
+              <td>Review quality, failure cases, and handoff friction</td>
+              <td>Workflow tuning actions</td>
+            </tr>
+            <tr>
+              <td>Monthly</td>
+              <td>Architecture fit check and role redesign where needed</td>
+              <td>Updated operating model</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="callout">
+          <h3>Practical rule</h3>
+          <p>If your weekly review is skipped, your quality debt compounds immediately.</p>
         </div>
       </section>
 
       <section class="reveal">
         <div class="section-head">
           <h2 class="section-title">Decision gates</h2>
-          <p class="section-summary">Different actions require different levels of human review. Make this explicit.</p>
+          <p class="section-summary">Every high-impact action needs an explicit approval boundary.</p>
         </div>
         <table class="matrix">
           <thead>
             <tr>
               <th>Gate</th>
-              <th>Trigger</th>
-              <th>Required review</th>
+              <th>Typical trigger</th>
+              <th>Human owner</th>
+              <th>Release condition</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Financial</td>
-              <td>Budget movement, pricing change, spend commitment</td>
-              <td>Operator sign-off + logged rationale</td>
+              <td>Money</td>
+              <td>Budget change, pricing edit, spend commitment</td>
+              <td>Operator or founder</td>
+              <td>Approved decision ID in queue</td>
             </tr>
             <tr>
               <td>Customer</td>
-              <td>External communication, account-level action</td>
-              <td>Reviewer approval + template compliance</td>
+              <td>Outbound communication or account action</td>
+              <td>Reviewer + accountable owner</td>
+              <td>Template compliance + evidence check</td>
             </tr>
             <tr>
-              <td>Legal & compliance</td>
-              <td>Policy-sensitive data, contractual implications</td>
-              <td>Escalation to designated human owner</td>
+              <td>Policy</td>
+              <td>Data handling, contractual or legal sensitivity</td>
+              <td>Designated policy owner</td>
+              <td>Explicit policy confirmation</td>
             </tr>
             <tr>
-              <td>Production change</td>
-              <td>Workflow routing, integration behavior, automations</td>
-              <td>Staged rollout + rollback plan</td>
+              <td>System</td>
+              <td>Workflow routing or integration behavior changes</td>
+              <td>Operations owner</td>
+              <td>Staged test + rollback plan</td>
             </tr>
           </tbody>
         </table>
@@ -124,54 +136,66 @@
       <section class="reveal">
         <div class="section-head">
           <h2 class="section-title">Memory and task routing</h2>
-          <p class="section-summary">Treat memory as infrastructure, not a side effect.</p>
+          <p class="section-summary">Treat memory and routing as infrastructure, not convenience.</p>
         </div>
         <div class="grid-2">
           <article class="card">
-            <h3>Memory tiers</h3>
-            <ul class="bullet-list">
-              <li>Session memory: short-lived context for active work</li>
-              <li>Workflow memory: reusable task-level context and decisions</li>
-              <li>System memory: policies, templates, and standards</li>
+            <h3>Memory model</h3>
+            <ul class="op-list">
+              <li><strong>Session memory:</strong> short-lived context for current task.</li>
+              <li><strong>Workflow memory:</strong> durable SOPs, task history, and known constraints.</li>
+              <li><strong>Decision memory:</strong> closed decisions with rationale and timestamp.</li>
             </ul>
           </article>
           <article class="card">
             <h3>Routing model</h3>
-            <ul class="bullet-list">
-              <li>Planner receives incoming objectives and decomposes tasks</li>
-              <li>Workers execute only within declared scope and limits</li>
-              <li>Reviewer validates completeness, risk, and evidence quality</li>
-              <li>Operator approves final output or sends for revision</li>
+            <ul class="op-list">
+              <li>Planner receives objective and decomposes into bounded tasks.</li>
+              <li>Workers execute only in declared scope.</li>
+              <li>Reviewer checks evidence, risk, and format quality.</li>
+              <li>Operator approves or returns with revision instructions.</li>
             </ul>
           </article>
+        </div>
+        <div class="callout">
+          <h3>One execution layer, one decision queue</h3>
+          <p>
+            Running multiple execution layers or fragmented decision queues causes hidden conflicts. Keep one execution
+            lane for task delivery and one queue for unresolved decisions. That single-threaded control model is the
+            fastest way to stay coherent at scale.
+          </p>
         </div>
       </section>
 
       <section class="reveal">
         <div class="section-head">
-          <h2 class="section-title">Safe automation ladder</h2>
-          <p class="section-summary">Increase autonomy in stages. Do not skip levels.</p>
+          <h2 class="section-title">Safe automation and responsible agent operation</h2>
+          <p class="section-summary">Autonomy is earned through observed reliability.</p>
         </div>
-        <div class="grid-3">
+        <div class="grid-2">
           <article class="card">
-            <h3>Level 1</h3>
-            <p>Assist-only mode. Agent proposes, human executes.</p>
+            <h3>Automation ladder</h3>
+            <ul class="op-list">
+              <li><strong>Level 1:</strong> agent proposes, human executes.</li>
+              <li><strong>Level 2:</strong> agent drafts, reviewer approves.</li>
+              <li><strong>Level 3:</strong> bounded autonomous execution with audit logs.</li>
+              <li><strong>Level 4:</strong> wider autonomy only after repeated clean review cycles.</li>
+            </ul>
           </article>
           <article class="card">
-            <h3>Level 2</h3>
-            <p>Draft-and-review mode. Agent executes reversible tasks with mandatory review.</p>
-          </article>
-          <article class="card">
-            <h3>Level 3</h3>
-            <p>Guardrailed autonomy. Agent executes bounded workflows with periodic audits.</p>
+            <h3>Responsibility rules</h3>
+            <ul class="op-list">
+              <li>Never allow agents to self-approve high-impact actions.</li>
+              <li>Require evidence for every material output.</li>
+              <li>Escalate ambiguity, do not improvise policy decisions.</li>
+              <li>Track incidents and publish corrective actions.</li>
+            </ul>
           </article>
         </div>
-        <div class="callout">
-          <h3>Responsible scaling rule</h3>
-          <p>
-            Move to the next autonomy level only after two consecutive review cycles with acceptable quality and no
-            material control failures.
-          </p>
+        <div class="cta-strip">
+          <a class="btn btn-primary" href="architectures.html">See real-world setups</a>
+          <a class="btn btn-secondary" href="resources.html">Open practical resources</a>
+          <a class="btn btn-secondary" href="work-with-us.html">Talk to Fintery</a>
         </div>
       </section>
     </main>

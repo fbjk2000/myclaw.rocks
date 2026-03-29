@@ -1,26 +1,29 @@
 # OpenClaw Starter Checklist
 
-## 1. Objective
-- [ ] Define one business objective for the first 14 days
-- [ ] Define success metrics (quality, speed, error rate)
+Use this checklist before the first production workflow.
 
-## 2. Roles
-- [ ] Assign operator owner
-- [ ] Define planner role
-- [ ] Define at least one worker role
-- [ ] Define reviewer role
+## A. Objective and scope
+- [ ] Define one primary business objective for the first 30 days.
+- [ ] Define success metrics (quality, turnaround time, revision rate).
+- [ ] Define one workflow boundary (what is in scope and out of scope).
 
-## 3. Controls
-- [ ] Define decision gates (financial, customer, legal, production)
-- [ ] Set escalation path and response times
-- [ ] Enable audit logging
+## B. Ownership
+- [ ] Assign operator owner.
+- [ ] Assign planner role owner.
+- [ ] Assign reviewer role owner.
+- [ ] Assign escalation owner for policy-sensitive tasks.
 
-## 4. Workflow
-- [ ] Select first bounded workflow
-- [ ] Define task input/output format
-- [ ] Define reporting template
+## C. Controls
+- [ ] Define decision gates (money, customer, policy, system).
+- [ ] Define approved tools and restricted actions.
+- [ ] Confirm audit/event logging is active.
 
-## 5. Cadence
-- [ ] Daily triage ritual
-- [ ] Weekly quality review
-- [ ] Monthly tuning plan
+## D. First workflow launch
+- [ ] Create role charters for planner, worker, reviewer.
+- [ ] Define one output template and one reporting template.
+- [ ] Run at least 5 supervised dry runs.
+
+## E. Cadence
+- [ ] Daily triage schedule set.
+- [ ] Weekly review owner assigned.
+- [ ] Monthly tuning checkpoint scheduled.

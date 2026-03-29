@@ -49,7 +49,13 @@ if (footerMount) {
     <footer class='footer'>
       <div class='site-shell footer-inner'>
         <span>myclaw.rocks - Run OpenClaw properly</span>
-        <span>Practical guide for setup, operations, and scale</span>
+        <span>
+          <a href='best-practices.html'>Explore best practices</a>
+          |
+          <a href='architectures.html'>See real-world setups</a>
+          |
+          <a href='work-with-us.html'>Talk to Fintery</a>
+        </span>
       </div>
     </footer>
   `;
