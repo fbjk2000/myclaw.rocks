@@ -189,7 +189,7 @@ h4 {
 
 h1 {
   font-family: 'DM Serif Display', Georgia, serif;
-  font-size: clamp(2.8rem, 7.4vw, 6.6rem);
+  font-size: clamp(2.3rem, 6vw, 5.2rem);
   max-width: 11ch;
 }
 
@@ -266,7 +266,7 @@ h1 em {
 
 .section-title {
   font-family: 'DM Serif Display', Georgia, serif;
-  font-size: clamp(2rem, 4.3vw, 3.8rem);
+  font-size: clamp(1.6rem, 3.2vw, 2.8rem);
   max-width: 14ch;
 }
 
@@ -293,7 +293,7 @@ h1 em {
 .resource-card h3,
 .service-card h3 {
   font-family: 'DM Serif Display', Georgia, serif;
-  font-size: 1.55rem;
+  font-size: 1.35rem;
   margin-bottom: var(--space-3);
 }
 
@@ -510,12 +510,6 @@ h1 em {
   margin-bottom: 4px;
 }
 
-.footer-inner a {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
 .template-link {
   display: flex;
   align-items: baseline;
@@ -556,13 +550,75 @@ summary {
   margin-top: var(--space-8);
 }
 
-.footer-inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: var(--space-4);
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.footer-title {
+  margin: 0 0 var(--space-2);
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.35rem;
+}
+
+.footer-label {
+  margin: 0 0 var(--space-3);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--smoke);
+  font-weight: 600;
+}
+
+.footer-copy {
+  margin: 0;
   color: #5c5954;
-  font-size: 0.93rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.footer-copy p {
+  margin: 0;
+}
+
+.footer-copy p + p {
+  margin-top: 4px;
+}
+
+.footer-links {
+  margin: 0;
+  padding-left: 16px;
+  color: #5c5954;
+  font-size: 0.92rem;
+}
+
+.footer-links li + li {
+  margin-top: 6px;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-bottom {
+  margin-top: var(--space-6);
+  padding-top: var(--space-5);
+  border-top: 1px solid rgba(44, 44, 44, 0.1);
+  color: #6a6762;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-bottom p + p {
+  margin-top: 4px;
 }
 
 .reveal {
@@ -594,6 +650,10 @@ summary {
 
   .hero::after {
     right: 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -638,6 +698,11 @@ summary {
 
   .flow-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
   }
 
   .btn {

@@ -45,17 +45,38 @@ if (headerMount) {
 
 const footerMount = document.querySelector('[data-site-footer]');
 if (footerMount) {
+  const year = new Date().getFullYear();
   footerMount.innerHTML = `
     <footer class='footer'>
-      <div class='site-shell footer-inner'>
-        <span>myclaw.rocks - Run OpenClaw properly</span>
-        <span>
-          <a href='best-practices.html'>Explore best practices</a>
-          |
-          <a href='architectures.html'>See real-world setups</a>
-          |
-          <a href='work-with-us.html'>Talk to Fintery</a>
-        </span>
+      <div class='site-shell footer-grid'>
+        <div class='footer-brand'>
+          <p class='footer-title'>FINTERY</p>
+          <p class='footer-copy'>
+            Founder-led AI, data, and value-creation support for SMBs across EMEA.
+          </p>
+          <p class='footer-copy'>myclaw.rocks - Run OpenClaw properly.</p>
+        </div>
+        <div>
+          <p class='footer-label'>Contact</p>
+          <div class='footer-copy'>
+            <p>Canbury Works. Units 6 and 7</p>
+            <p>Canbury Business Park. Elm Crescent</p>
+            <p>Kingston upon Thames.</p>
+            <p>Surrey, KT2 6HJ, UK</p>
+            <p><a href='mailto:info@fintery.com'>info@fintery.com</a></p>
+          </div>
+        </div>
+        <div>
+          <p class='footer-label'>Legal</p>
+          <ul class='footer-links'>
+            <li><a href='https://fintery.com/legal/privacy' target='_blank' rel='noreferrer'>Privacy</a></li>
+            <li><a href='https://fintery.com/legal/terms' target='_blank' rel='noreferrer'>Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class='site-shell footer-bottom'>
+        <p>Copyright ${year} FINTERY. Built for practical value creation.</p>
+        <p>All product names and trademarks are the property of their respective owners.</p>
       </div>
     </footer>
   `;
